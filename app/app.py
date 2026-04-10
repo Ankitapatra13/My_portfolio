@@ -5,13 +5,13 @@ st.set_page_config(page_title="Portfolio", layout="wide")
 st.markdown("<h1 style='text-align: center;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.link_button("ptra.ankita@gmail.com","mailto:ptra.ankita@gmail.com") 
+    st.markdown("[ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
 with col2:
-    st.link_button("(+91) 7439404917","tel:+917439404917") 
+    st.markdown("[(+91) 7439404917](tel:+917439404917)") 
 with col3:
-    st.link_button("GitHub","https://github.com/Ankitapatra13") 
+    st.markdown("[GitHub](https://github.com/Ankitapatra13)") 
 with col4:
-    st.link_button("Kaggle","https://www.kaggle.com/ankitapatra13")
+    st.markdown("[Kaggle](https://www.kaggle.com/ankitapatra13)")
 st.subheader("Aspiring AI/ML Engineer",divider="grey",width="content",text_alignment="center")
 
 # About 
