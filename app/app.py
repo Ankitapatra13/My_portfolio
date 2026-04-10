@@ -3,25 +3,29 @@ import streamlit as st
 st.set_page_config(page_title="Portfolio", layout="wide")
 # Header
 st.markdown("<h1 style='text-align: center;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
-col1, col2, col3, col4 = st.columns(4)
+col1, col2 = st.columns(2)
 with col1:
     st.markdown("[ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
 with col2:
     st.markdown("[(+91) 7439404917](tel:+917439404917)") 
-with col3:
+col1, col2 = st.columns(2)
+with col1:
     st.markdown("[GitHub](https://github.com/Ankitapatra13)") 
-with col4:
+with col2:
     st.markdown("[Kaggle](https://www.kaggle.com/ankitapatra13)")
+
 st.subheader("Aspiring AI/ML Engineer",divider="grey",width="content",text_alignment="center")
+st.divider()
 
 # About 
-st.header("PROFESSIONAL SUMMARY",divider="grey",width="content")
-st.write("""I am an aspiring AI/ML Engineer with hands-on experience in building machine learning models 
-         and deploying data-driven applications. 
-         I enjoy solving real-world problems using data.""")
+st.header("PROFESSIONAL SUMMARY")
+st.write("""Passionate and driven AI/ML Engineer with hands-on experience in developing machine learning models and deploying data-driven applications. 
+Skilled in Python, data analysis, and machine learning algorithms, with expertise in clustering techniques (K-Means), classification models (XGBoost), and feature engineering. 
+Proven track record in building end-to-end solutions for customer segmentation and predictive analytics, delivering actionable business insights. 
+Committed to solving real-world problems through innovative data science approaches and continuous learning in the rapidly evolving field of AI.""")
 
 # Projects
-st.header("PROJECTS",divider="grey",width="content")
+st.header("PROJECTS")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -38,6 +42,7 @@ with col1:
         st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Customer_Segmentation_System")
     with subcol2:
         st.link_button("🌐 Live App","https://customersegmentationsystem-2zsgwv5dsdgbyvg2l3rt2t.streamlit.app/")
+    st.divider()
 
 with col2:
     st.subheader("🎓 Student Dropout Prediction System",divider="grey",width="content",text_alignment="center")
@@ -57,7 +62,7 @@ with col2:
 st.divider()
 
 # Skills
-st.header("SKILLS",divider="grey",width="content")
+st.header("SKILLS")
 st.markdown(" **Programming** : Python(Numpy,Pandas,Scikit-learn)")
 st.markdown(" **Tools & Frameworks** : Git, GitHub, VS Code, Streamlit, Kaggle")
 
