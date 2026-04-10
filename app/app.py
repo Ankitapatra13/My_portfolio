@@ -2,7 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title="Portfolio", layout="wide")
 # Header
-st.markdown("<h1 style='text-align: center;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: steelblue;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: gray; font-size: 16;'>🎯 AI/ML Engineer | Data Scientist | Problem Solver</p>", unsafe_allow_html=True)
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("[ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
@@ -17,14 +18,14 @@ st.subheader("Aspiring AI/ML Engineer")
 st.divider()
 
 # About 
-st.header("PROFESSIONAL SUMMARY")
+st.header("📋 PROFESSIONAL SUMMARY")
 st.write("""Passionate and driven AI/ML Engineer with hands-on experience in developing machine learning models and deploying data-driven applications. 
 Skilled in Python, data analysis, and machine learning algorithms, with expertise in clustering techniques (K-Means), classification models (XGBoost), and feature engineering. 
 Proven track record in building end-to-end solutions for customer segmentation and predictive analytics, delivering actionable business insights. 
 Committed to solving real-world problems through innovative data science approaches and continuous learning in the rapidly evolving field of AI.""")
 
 # Projects
-st.header("PROJECTS")
+st.header("🚀 PROJECTS")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -85,8 +86,11 @@ with col4:
 
 st.divider()
 # Skills
-st.header("SKILLS")
-st.markdown(" **Programming** : Python(Numpy,Pandas,Scikit-learn)")
-st.markdown(" **Tools & Frameworks** : Git, GitHub, VS Code, Streamlit, Kaggle")
+st.header("💡 SKILLS")
+st.markdown("**🐍 Programming** : Python (Numpy, Pandas, Scikit-learn)")
+st.markdown("**🛠️ Tools & Frameworks** : Git, GitHub, VS Code, Streamlit, Kaggle")
+st.markdown("**📊 Specializations** : Machine Learning, Data Analysis, Clustering, Classification")
+st.divider()
+st.markdown("<p style='text-align: center; color: gray; font-size: 12px;'>© 2026 Ankita Patra | Portfolio powered by Streamlit</p>", unsafe_allow_html=True)
 
 
