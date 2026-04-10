@@ -28,40 +28,45 @@ st.header("PROJECTS")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("🛒 Customer Segmentation System",divider="grey",width="content")
-    st.write("""
-    - **K-Means clustering** is used to identify distinct customer groups. 
-    - Used **Elbow Method** and **Silhouette Score** to ensure well-defined clusters. 
-    - **Engineered features** (Total spendings, Total children, Age and more) 
-    - Used scatter plot in application to show customer's position in market. 
-    - Generated Business insights and recommendations for better ROI. 
+    st.subheader("🛒 Customer Segmentation System",divider="blue",width="content")
+    st.markdown("""
+    **Key Technologies & Methods:**
+    - **K-Means Clustering**: Identifies distinct customer groups for targeted marketing
+    - **Model Validation**: Elbow Method and Silhouette Score ensure well-defined clusters
+    - **Feature Engineering**: Total spendings, children count, age, and demographic data
+    - **Data Visualization**: Interactive scatter plots show customer market positioning
+    - **Business Impact**: Generates actionable insights and ROI optimization recommendations
     """)
     subcol1, subcol2 = st.columns(2)
     with subcol1:
         st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Customer_Segmentation_System")
     with subcol2:
         st.link_button("🌐 Live App","https://customersegmentationsystem-2zsgwv5dsdgbyvg2l3rt2t.streamlit.app/")
-    st.divider()
+    
 
 with col2:
-    st.subheader("🎓 Student Dropout Prediction System",divider="grey",width="content",text_alignment="center")
+    st.subheader("🎓 Student Dropout Prediction System",divider="blue",width="content")
     st.markdown("""
-    - Used XGBoost model to predict student dropout risk using behavioral, academic, and lifestyle data.  
-    - ~**63%** accuracy, F1-score: 0.63  
-    - Feature engineering + class imbalance handling 
-    - Applied preprocessing **pipelines** and trained an optimized XGBoost model for multi-class classification (Low, Medium, High).
-    - **Aligned** training and inference **features**, **eliminating** prediction **mismatches**.
-    - **Deployed** on **Streamlit** for **real-time predictions** with structured user inputs.
-                            """)
+    **Model Performance:**
+    - **Accuracy**: ~63%
+    - **F1-Score**: 0.63 for balanced evaluation
+    
+    **Key Features:**
+    - **XGBoost Algorithm**: Multi-class classification for Low, Medium, High dropout risk
+    - **Advanced Preprocessing**: Feature engineering and class imbalance handling
+    - **Data Pipeline**: Robust preprocessing pipelines ensuring training/inference consistency
+    - **Deployment**: Real-time predictions through user-friendly Streamlit interface
+    """)
     subcol3, subcol4 = st.columns(2)
     with subcol3:
         st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Student_dropout_prediction_system")
     with subcol4:
         st.link_button("🌐 Live App", "https://studentdropoutpredictionsystem-b927fxzz9awqk4ajbtzcna.streamlit.app/")
-st.divider()
 
+st.divider()
 # Skills
 st.header("SKILLS")
 st.markdown(" **Programming** : Python(Numpy,Pandas,Scikit-learn)")
 st.markdown(" **Tools & Frameworks** : Git, GitHub, VS Code, Streamlit, Kaggle")
+
 
