@@ -1,7 +1,6 @@
 import streamlit as st
 
 st.set_page_config(page_title="Portfolio", layout="wide")
-
 # Header
 st.title("👩‍💻 ANKITA PATRA",width="content",text_alignment="center")
 st.link_button("ptra.ankita@gmail.com","mailto:ptra.ankita@gmail.com") 
