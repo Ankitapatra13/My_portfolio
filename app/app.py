@@ -4,8 +4,11 @@ st.set_page_config(page_title="Portfolio", layout="wide")
 
 # Header
 st.title("👩‍💻 ANKITA PATRA",width="content",text_alignment="center")
-st.write(st.link_button("ptra.ankita@gmail.com","mailto:ptra.ankita@gmail.com") | st.button("(+91) 7439404917","7439404917"))
-st.write(st.button("LinkedIn") | st.button("GitHub","https://github.com/Ankitapatra13") | st.button("Kaggle","https://www.kaggle.com/ankitapatra13"))
+st.link_button("ptra.ankita@gmail.com","mailto:ptra.ankita@gmail.com") 
+st.button("(+91) 7439404917","7439404917")
+st.link_button("LinkedIn") 
+st.button("GitHub","https://github.com/Ankitapatra13") 
+st.button("Kaggle","https://www.kaggle.com/ankitapatra13")
 st.subheader("Aspiring AI/ML Engineer",divider="grey",width="content",text_alignment="center")
 
 # About 
