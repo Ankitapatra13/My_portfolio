@@ -2,11 +2,16 @@ import streamlit as st
 
 st.set_page_config(page_title="Portfolio", layout="wide")
 # Header
-st.title("👩‍💻 ANKITA PATRA",width="content",text_alignment="center")
-st.link_button("ptra.ankita@gmail.com","mailto:ptra.ankita@gmail.com") 
-st.button("(+91) 7439404917","7439404917") 
-st.button("GitHub","https://github.com/Ankitapatra13") 
-st.button("Kaggle","https://www.kaggle.com/ankitapatra13")
+st.markdown("<h1 style='text-align: center;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.link_button("ptra.ankita@gmail.com","mailto:ptra.ankita@gmail.com") 
+with col2:
+    st.link_button("(+91) 7439404917","tel:+917439404917") 
+with col3:
+    st.link_button("GitHub","https://github.com/Ankitapatra13") 
+with col4:
+    st.link_button("Kaggle","https://www.kaggle.com/ankitapatra13")
 st.subheader("Aspiring AI/ML Engineer",divider="grey",width="content",text_alignment="center")
 
 # About 
@@ -28,8 +33,11 @@ with col1:
     - Used scatter plot in application to show customer's position in market. 
     - Generated Business insights and recommendations for better ROI. 
     """)
-    st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Customer_Segmentation_System")
-    st.link_button("🌐 Live App","https://customersegmentationsystem-2zsgwv5dsdgbyvg2l3rt2t.streamlit.app/")
+    subcol1, subcol2 = st.columns(2)
+    with subcol1:
+        st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Customer_Segmentation_System")
+    with subcol2:
+        st.link_button("🌐 Live App","https://customersegmentationsystem-2zsgwv5dsdgbyvg2l3rt2t.streamlit.app/")
 
 with col2:
     st.subheader("🎓 Student Dropout Prediction System",divider="grey",width="content",text_alignment="center")
@@ -41,8 +49,11 @@ with col2:
     - **Aligned** training and inference **features**, **eliminating** prediction **mismatches**.
     - **Deployed** on **Streamlit** for **real-time predictions** with structured user inputs.
                             """)
-    st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Student_dropout_prediction_system")
-    st.link_button("🌐 Live App", "https://studentdropoutpredictionsystem-b927fxzz9awqk4ajbtzcna.streamlit.app/")
+    subcol3, subcol4 = st.columns(2)
+    with subcol3:
+        st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Student_dropout_prediction_system")
+    with subcol4:
+        st.link_button("🌐 Live App", "https://studentdropoutpredictionsystem-b927fxzz9awqk4ajbtzcna.streamlit.app/")
 st.divider()
 
 # Skills
