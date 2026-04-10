@@ -3,18 +3,17 @@ import streamlit as st
 st.set_page_config(page_title="Portfolio", layout="wide")
 # Header
 st.markdown("<h1 style='text-align: center;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
-col1, col2 = st.columns(2)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("[ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
 with col2:
     st.markdown("[(+91) 7439404917](tel:+917439404917)") 
-col1, col2 = st.columns(2)
-with col1:
+with col3:
     st.markdown("[GitHub](https://github.com/Ankitapatra13)") 
-with col2:
+with col4:
     st.markdown("[Kaggle](https://www.kaggle.com/ankitapatra13)")
 
-st.subheader("Aspiring AI/ML Engineer",divider="grey",width="content",text_alignment="center")
+st.subheader("Aspiring AI/ML Engineer")
 st.divider()
 
 # About 
