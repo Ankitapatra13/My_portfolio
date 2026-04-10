@@ -56,8 +56,8 @@ col3, col4 = st.columns(2)
 with col3:
     img_col3, img_col4 = st.columns(2)
     with img_col3:
-        st.image("images/dropout/dropout_ui.png", caption="Home Page")
-        st.image("images/dropout/dropout_ui2.png", caption="Home Page")
+        st.image("images/dropout/dropout_ui.png")
+        st.image("images/dropout/dropout_ui2.png")
         st.image("images/dropout/dropout_ui3.png", caption="Home Page")
 
     with img_col4:
