@@ -14,7 +14,7 @@ with col3:
 with col4:
     st.markdown("[Kaggle](https://www.kaggle.com/ankitapatra13)")
 
-st.markdown("<h2 style='font-size: 22';>🤖 Aspiring AI/ML Engineer</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='font-size: 18';> 🤖 Aspiring AI/ML Engineer</h2>", unsafe_allow_html=True)
 st.divider()
 
 # About 
