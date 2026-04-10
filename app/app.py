@@ -43,8 +43,28 @@ with col1:
     with subcol2:
         st.link_button("🌐 Live App","https://customersegmentationsystem-2zsgwv5dsdgbyvg2l3rt2t.streamlit.app/")
     
-
 with col2:
+    img_col1, img_col2 = st.columns(2)
+    with img_col1:
+        st.image("../images/UI.png", caption="Home Page")
+        st.image("../images/Prediction.png", caption="Prediction Screen")
+    with img_col2:
+        st.image("../images/Visualization.png", caption=" Segment Visualization")
+        st.image("../images/Cluster_Summary.png", caption="Cluster Summary")
+
+col3, col4 = st.columns(2)
+with col3:
+    img_col3, img_col4 = st.columns(2)
+    with img_col3:
+        st.image("../images/dropout/dropout_ui.png", caption="Home Page")
+        st.image("../images/dropout/dropout_ui2.png", caption="Home Page")
+        st.image("../images/dropout/dropout_ui3.png", caption="Home Page")
+
+    with img_col4:
+        st.image("../images/dropout/dropout_result.png", caption="Prediction Screen")
+        st.image("../images/dropout/dropout_insights.png", caption="Insights Screen")
+        st.image("../images/dropout/dropout_recommendations.png", caption="Recommendations Screen")
+with col4:
     st.subheader("🎓 Student Dropout Prediction System",divider="blue",width="content")
     st.markdown("""
     **Model Performance:**
