@@ -6,13 +6,13 @@ st.session_state.setdefault('show_css_demo_video', False)
 st.markdown("<h1 style='text-align: center; color: steelblue;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.markdown("[ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
+    st.markdown("📧 [ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
 with col2:
-    st.markdown("[(+91) 7439404917](tel:+917439404917)") 
+    st.markdown("📞 [(+91) 7439404917](tel:+917439404917)") 
 with col3:
-    st.markdown("[GitHub](https://github.com/Ankitapatra13)") 
+    st.markdown("🐙 [GitHub](https://github.com/Ankitapatra13)") 
 with col4:
-    st.markdown("[Kaggle](https://www.kaggle.com/ankitapatra13)")
+    st.markdown("🏆 [Kaggle](https://www.kaggle.com/ankitapatra13)")
 
 st.markdown("<h2 style='font-size: 18';> Aspiring AI/ML Engineer</h2>", unsafe_allow_html=True)
 st.divider()
@@ -57,7 +57,7 @@ with col2:
 st.markdown("""
 <div class="video-container">
     <h3 class="video-title">🎥 2-Minute Product Walkthrough</h3>
-    <p style="color: #E8E8E8; margin-bottom: 1.5rem;">Watch how the Customer Segmentation System works in action</p>
+    <p>Watch how the Customer Segmentation System works in action</p>
 </div>
 """, unsafe_allow_html=True)
 col_left, col_video, col_right = st.columns([1, 2, 1])
