@@ -52,6 +52,14 @@ with col2:
     with img_col2:
         st.image("images/Visualization.png", caption=" Segment Visualization")
         st.image("images/Cluster_Summary.png", caption="Cluster Summary")
+    st.markdown('''
+    <a href="videos/customer_segmenation_demo_video.mp4" target="_blank" style="text-decoration: none;">
+    <div style="position: relative; display: inline-block; width: 100%;">
+    <img src="images/UI.png" style="width: 100%; border-radius: 5px;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: white; padding: 15px 20px; border-radius: 10px; font-size: 18px; font-weight: bold;">▶ Watch Demo</div>
+    </div>
+    </a>
+    ''', unsafe_allow_html=True)
 
 col3, col4 = st.columns(2)
 with col3:
