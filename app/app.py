@@ -56,11 +56,11 @@ with col2:
 
 # Demo Video Section for customer segmentation project
 st.divider()
-st.subheader("🎥 Customer Segmentation Demo Video")
+st.subheader("🎥 2-min Product Walkthrough")
 col_left, col_video, col_right = st.columns([1, 2, 1])
 with col_video:
     st.video("videos/customer_segmentation_demo_video.mp4")
-
+st.divider() 
 col3, col4 = st.columns(2)
 with col3:
     img_col3, img_col4 = st.columns(2)
