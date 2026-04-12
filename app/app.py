@@ -4,7 +4,6 @@ st.set_page_config(page_title="Portfolio", layout="wide")
 st.session_state.setdefault('show_css_demo_video', False)
 # Header
 st.markdown("<h1 style='text-align: center; color: steelblue;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: gray; font-size: 16;'>🎯 AI/ML Engineer | Data Scientist | Problem Solver</p>", unsafe_allow_html=True)
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("[ptra.ankita@gmail.com](mailto:ptra.ankita@gmail.com)") 
@@ -54,13 +53,16 @@ with col2:
         st.image("images/Visualization.png", caption=" Segment Visualization")
         st.image("images/Cluster_Summary.png", caption="Cluster Summary")
 
-# Demo Video Section for customer segmentation project
-st.divider()
-st.subheader("🎥 2-min Product Walkthrough")
+# Demo Video Section
+st.markdown("""
+<div class="video-container">
+    <h3 class="video-title">🎥 2-Minute Product Walkthrough</h3>
+    <p style="color: #E8E8E8; margin-bottom: 1.5rem;">Watch how the Customer Segmentation System works in action</p>
+</div>
+""", unsafe_allow_html=True)
 col_left, col_video, col_right = st.columns([1, 2, 1])
 with col_video:
-    st.video("videos/customer_segmentation_demo_video.mp4")
-st.divider() 
+    st.video("videos/customer_segmentation_demo_video.mp4") 
 col3, col4 = st.columns(2)
 with col3:
     img_col3, img_col4 = st.columns(2)
