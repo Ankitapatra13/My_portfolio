@@ -55,7 +55,7 @@ with col2:
         st.image("images/Cluster_Summary.png", caption="Cluster Summary")
     col_left, col_video, col_right = st.columns([1, 2, 1])
     with col_video:
-            st.video("videos/customer_segmentation_demo_video.mp4", subtitles="videos/customer_segmentation_demo_video.vtt")
+            st.video("videos/customer_segmentation_demo_video.mp4")
 
 col3, col4 = st.columns(2)
 with col3:
