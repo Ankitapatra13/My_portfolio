@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Portfolio", layout="wide")
+st.session_state.setdefault('show_css_demo_video', False)
 # Header
 st.markdown("<h1 style='text-align: center; color: steelblue;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: gray; font-size: 16;'>🎯 AI/ML Engineer | Data Scientist | Problem Solver</p>", unsafe_allow_html=True)
@@ -52,7 +53,18 @@ with col2:
     with img_col2:
         st.image("images/Visualization.png", caption=" Segment Visualization")
         st.image("images/Cluster_Summary.png", caption="Cluster Summary")
-    st.video("videos/customer_segmentation_demo_video.mp4")
+    col_left, col_video, col_right = st.columns([1, 2, 1])
+    with col_video:
+        if not st.session_state.show_css_demo_video:
+            if st.button("▶ Play Demo Video", key="play_demo_btn", use_container_width=True):
+                st.session_state.show_css_demo_video = True
+                st.rerun()
+            st.image("images/UI.png", caption="Click to watch demo")
+        else:
+            st.video("videos/customer_segmentation_demo_video.mp4", subtitles="videos/customer_segmentation_demo_video.vtt")
+            if st.button("✕ Close Video", key="close_demo_btn", use_container_width=True):
+                st.session_state.show_css_demo_video = False
+                st.rerun()
 
 col3, col4 = st.columns(2)
 with col3:
