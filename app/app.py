@@ -52,7 +52,7 @@ with col2:
     with img_col2:
         st.image("images/Visualization.png", caption=" Segment Visualization")
         st.image("images/Cluster_Summary.png", caption="Cluster Summary")
-    st.video("videos/customer_segmenation_demo_video.mp4")
+    st.video("videos/customer_segmentation_demo_video.mp4")
 
 col3, col4 = st.columns(2)
 with col3:
