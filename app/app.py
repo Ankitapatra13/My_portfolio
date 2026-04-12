@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Portfolio", layout="wide")
+st.session_state.setdefault('show_video', False)
 # Header
 st.markdown("<h1 style='text-align: center; color: steelblue;'>👩‍💻 ANKITA PATRA</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: gray; font-size: 16;'>🎯 AI/ML Engineer | Data Scientist | Problem Solver</p>", unsafe_allow_html=True)
@@ -52,14 +53,11 @@ with col2:
     with img_col2:
         st.image("images/Visualization.png", caption=" Segment Visualization")
         st.image("images/Cluster_Summary.png", caption="Cluster Summary")
-    st.markdown('''
-    <a href="videos/customer_segmenation_demo_video.mp4" target="_blank" style="text-decoration: none;">
-    <div style="position: relative; display: inline-block; width: 100%;">
-    <img src="images/UI.png" style="width: 100%; border-radius: 5px;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: white; padding: 15px 20px; border-radius: 10px; font-size: 18px; font-weight: bold;">▶ Watch Demo</div>
-    </div>
-    </a>
-    ''', unsafe_allow_html=True)
+    st.image("images/UI.png", caption="Demo Thumbnail")
+    if st.button("▶ Watch Demo"):
+        st.session_state.show_video = not st.session_state.get('show_video', False)
+    if st.session_state.get('show_video', False):
+        st.video("videos/customer_segmenation_demo_video.mp4")
 
 col3, col4 = st.columns(2)
 with col3:
