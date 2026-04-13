@@ -14,7 +14,7 @@ with col3:
 with col4:
     st.markdown("🏆 [Kaggle](https://www.kaggle.com/ankitapatra13)")
 
-st.markdown("<h2 style='font-size: 18';> Aspiring AI/ML Engineer</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='font-size: 18';> 🤖 Aspiring AI/ML Engineer</h2>", unsafe_allow_html=True)
 st.divider()
 
 # About 
@@ -93,7 +93,17 @@ with col4:
         st.link_button("🔗 View GitHub", "https://github.com/Ankitapatra13/Student_dropout_prediction_system")
     with subcol4:
         st.link_button("🌐 Live App", "https://studentdropoutpredictionsystem-b927fxzz9awqk4ajbtzcna.streamlit.app/")
-
+# Demo Video Section
+st.markdown("""
+<div class="video-container">
+    <h3 class="video-title">🎥 2-Minute Product Walkthrough</h3>
+    <p>Watch how the Student Dropout Prediction System works in action</p>
+</div>
+""", unsafe_allow_html=True)
+col_left, col_video, col_right = st.columns([1, 2, 1])
+with col_video:
+    st.video("videos/student_dropout_demo_video.mp4") 
+col3, col4 = st.columns(2)
 st.divider()
 # Skills
 st.header("💡 SKILLS")
